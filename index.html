@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>卒論締切まで残り</title>
+    <title>abstract締切まで残り</title>
     <style>
         /* デフォルトデザイン（白背景） */
         body {
@@ -104,13 +104,13 @@
 </head>
 
 <body>
-    <h1 id="title">卒論締切まで残り</h1>
+    <h1 id="title">abstract締切まで残り</h1>
     <div class="countdown" id="countdown"></div>
     <button class="toggle-button" id="toggleMode">デザイン切り替え</button>
 
     <script>
         function calculateTimeLeft() {
-            const targetDate = new Date("2025-02-07T16:00:00").getTime();
+            const targetDate = new Date("2025-04-16T15:59:00").getTime();
             const now = new Date().getTime();
             const difference = targetDate - now;
 
@@ -140,9 +140,9 @@
             // タイトルの絵文字を変更
             const title = document.getElementById("title");
             if (document.body.classList.contains("dark-mode")) {
-                title.innerHTML = "🚨 卒論締切まで残り 🚨";
+                title.innerHTML = "🚨 abstract締切まで残り 🚨";
             } else {
-                title.innerHTML = "卒論締切まで残り";
+                title.innerHTML = "abstract締切まで残り";
             }
         });
     </script>
